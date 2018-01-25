@@ -33,6 +33,16 @@
         controller: 'MoreCtrl',
         controllerAs: 'More',
       })
+	  .when('/final', {
+        templateUrl: 'src/app/final/final.html',
+        controller: 'FinalCtrl',
+        controllerAs: 'Final',
+      })
+	  .when('/cocktailDetail', {
+        templateUrl: 'src/app/cocktailDetail/cocktailDetail.html',
+        controller: 'DetailCtrl',
+        controllerAs: 'Detail',
+      })
       .otherwise({redirectTo:'/'});
   }
   function RunUtils($rootScope) {

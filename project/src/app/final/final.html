@@ -1,0 +1,17 @@
+<div id="finalBigContainer">
+	<div id="finalSmallContainer">
+		<input type="text" id="finalInput" name="finalInput" ng-model="Final.texteFinalInput"/>
+		<button id="finalButton" ng-click="Final.clicBoutonFinal()">Buvons !</button>	
+	</div>
+
+	<div id='ingredient'>{{Final.service.ingredient}}</div>
+	<li ng-repeat="cocktail in Final.cocktailSearchService.cocktailList">
+		<cocktail cocktail-element="cocktail">
+			
+		</cocktail>
+	</li>
+	
+	
+	
+
+</div>
